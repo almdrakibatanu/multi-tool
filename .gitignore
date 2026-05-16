@@ -1,6 +1,6 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
-# dependencies
+# ---------- dependencies ----------
 /node_modules
 /.pnp
 .pnp.*
@@ -9,33 +9,74 @@
 !.yarn/plugins
 !.yarn/releases
 !.yarn/versions
+jspm_packages/
 
-# testing
+# ---------- testing ----------
 /coverage
+*.lcov
+.nyc_output
 
-# next.js
+# ---------- next.js ----------
 /.next/
 /out/
+.next
+next-env.d.ts
 
-# production
+# ---------- production / build ----------
 /build
+/dist
 
-# misc
-.DS_Store
-*.pem
+# ---------- env files ----------
+.env
+.env.*
+!.env.example
 
-# debug
+# ---------- logs ----------
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+pnpm-debug.log*
 .pnpm-debug.log*
+lerna-debug.log*
+logs
+*.log
 
-# env files (can opt-in for committing if needed)
-.env*
+# ---------- caches ----------
+.cache
+.parcel-cache
+.eslintcache
+.stylelintcache
+.turbo
+.swc/
+.npm
 
-# vercel
+# ---------- typescript ----------
+*.tsbuildinfo
+
+# ---------- vercel ----------
 .vercel
 
-# typescript
-*.tsbuildinfo
-next-env.d.ts
+# ---------- editors / IDEs ----------
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# ---------- OS ----------
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# ---------- misc ----------
+*.pem
+*.key
+*.local
