@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(cmdkey /delete:\"LegacyGeneric:target=git:https://github.com\")"
+    ]
+  }
+}
